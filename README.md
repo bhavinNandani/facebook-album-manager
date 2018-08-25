@@ -1,7 +1,8 @@
 #  Facebook album manager
 
 
-![GitHub Logo](/icon/fb.jpg)
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
 
 Facebook album manager is a gogle drive-enabled, mobile-ready, offline-storage, PHP powered with light bootstrap design website
 
