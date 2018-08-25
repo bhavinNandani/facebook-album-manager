@@ -1,10 +1,10 @@
 <?php
     require_once 'easy_googledrive.php';
     $googledrive = new easy_googledrive(array(
-    'ClientId'=>'390005845182-lm1jjm9js4jbim9nbcmi9ccnpqbkk4ag.apps.googleusercontent.com',
-    'ClientSecret'=>'SLeaGzaOZpXx6_BTjW-t0953',
+    'ClientId'=>'{google drive client id}',
+    'ClientSecret'=>'{google drive client secret}',
 	'AccessType' => 'offline',
-	'RedirectUri' => 'https://newfbbhavin.000webhostapp.com/index.php'
+	'RedirectUri' => '{Application redirected URL }'
 ));
 
 $googledrive->easy_initialize();
