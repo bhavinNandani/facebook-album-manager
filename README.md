@@ -1,8 +1,6 @@
 #  Facebook album manager
 
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
 Facebook album manager is a gogle drive-enabled, mobile-ready, offline-storage, PHP powered with light bootstrap design website
 
 
