@@ -32,19 +32,21 @@ Some of the technology which are used to develop the facebook-album manager:
 - Replace app_id and app_secret in config.php with your facebook app_id and app_secret. Configure call back url as: callback.php in Facebook OAuth.
 ```php 
 $FB = new \Facebook\Facebook([
- 'app_id' => '{Your facebook id here}',
-'app_secret' => '{Your facebook app secret}',
+        'app_id' => '{Your facebook id here}',
+        'app_secret' => '{Your facebook app secret}',
 		'default_graph_version' => 'v3.1'
-]); ```
+]); 
+```
 
+* Enable the Google Drive Api and get your Drive client id , drive client secret ans also add a redirect url
+*  Enter your Google Credentials in `googleDrive/easyGoogle.php` 
+ 
+```
+$googledrive = new easy_googledrive(array(
+    'ClientId'=>'{google drive client id}',
+    'ClientSecret'=>'{google drive client secret}',
+	'AccessType' => 'offline',
+	'RedirectUri' => '{Application redirected URL }'
+));
 
-
-
-
-### Installation
-Clone the repository and use composer to install dependencies of Facebook and Google Drive SDK.
-
-Follow the installation instructions if you do not already have composer installed. Run the install command from the root directory to setup the dependencies.
-Facebook album manager requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
+```  
