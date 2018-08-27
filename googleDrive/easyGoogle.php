@@ -9,6 +9,4 @@
 	
 	$googledrive->easy_initialize();
 	$googledrive->easy_token();
-	
-	
-	?>
+?>
