@@ -58,17 +58,14 @@
 						$zipAllLink = "zip/zipAlbum.php?type=all";    
 						$googleDriveAll = "googleDrive/upload.php?type=all"; 
 						?>
-						
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-				    <li class="nav-item active">
-						    <?php $id = $_SESSION['userData']['id']?>
+					<li class="nav-item active">
+						<?php $id = $_SESSION['userData']['id']?>
 						<?php echo"<a href='zip/removeZip.php?id=$id'>"; ?>
-							<p class="text-center">REMOVE</p>
+						<p class="text-center">REMOVE</p>
 						</a>
 					</li>
-					
-				
 					<li>&nbsp;&nbsp;&nbsp;</li>
 					<?php
 						$zipCheck='zip/images/'.$_SESSION['userData']['id'].'.zip';
@@ -82,15 +79,14 @@
 						 
 						}
 						?>
-						<li>&nbsp;&nbsp;&nbsp;</li>
-<?php if($googledrive->isLoggedIn())
-   {
-        echo "<a href= '$googleDriveAll' ><button type='button'  class='btn btn-default btn-sm bg-primary'><span class='glyphicon glyphicon-save-file'></span>&nbsp;&nbsp;Move to google</button></a>";
-    } else 
-   { 
-       ?><a href="<?php echo $googledrive->easy_login() ; ?>"><button type='button'  class='btn btn-default btn-sm bg-light' ><span class='glyphicon glyphicon-save-file'></span>Move to google</button></a>
-<?php	 } ?>
-					
+					<li>&nbsp;&nbsp;&nbsp;</li>
+					<?php if($googledrive->isLoggedIn())
+						{
+						     echo "<a href= '$googleDriveAll' ><button type='button'  class='btn btn-default btn-sm bg-primary'><span class='glyphicon glyphicon-save-file'></span>&nbsp;&nbsp;Move to google</button></a>";
+						 } else 
+						{ 
+						    ?><a href="<?php echo $googledrive->easy_login() ; ?>"><button type='button'  class='btn btn-default btn-sm bg-light' ><span class='glyphicon glyphicon-save-file'></span>Move to google</button></a>
+					<?php	 } ?>
 					<li>&nbsp;&nbsp;&nbsp;</li>
 					<li><a href="logout.php"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i> LOGOUT</a></li>
 				</ul>
