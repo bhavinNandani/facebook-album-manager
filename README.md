@@ -14,13 +14,14 @@ Facebook album manager is a gogle drive-enabled, mobile-ready, offline-storage, 
   - Also user can backup albums into the google drive single or all
   - Drag and drop images (requires your Dropbox account be linked)
   - User can view the images contain in the album
+  - Remove zip button is also in the UI because if the user update his / her albums and want a current albums zip than , remove the zip and again create a new zip | feature gives the latest album to user and also maintain the load of the server |
 
 
 
 ### Tech
 
 Some of the technology which are used to develop the facebook-album manager:
-[:beginner:]
+
 * [HTML5](html5.org) - HTML enhanced for web apps!
 * [PHP](php.net/) - PHP uses for the scripting
 * [Bootstrap](https://getbootstrap.com/) - Designing purpose* 
