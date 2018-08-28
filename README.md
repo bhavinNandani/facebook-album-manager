@@ -33,9 +33,9 @@ Some of the technology which are used to develop the facebook-album manager:
 - Replace app_id and app_secret in config.php with your facebook app_id and app_secret. Configure call back url as: callback.php in Facebook OAuth.
 ```php 
 $FB = new \Facebook\Facebook([
-        'app_id' => '{Your facebook id here}',
-        'app_secret' => '{Your facebook app secret}',
-		'default_graph_version' => 'v3.1'
+	'app_id' => '{Your facebook id here}',
+	'app_secret' => '{Your facebook app secret}',
+	'default_graph_version' => 'v3.1'
 ]); 
 ```
 
@@ -44,8 +44,8 @@ $FB = new \Facebook\Facebook([
  
 ```
 $googledrive = new easy_googledrive(array(
-    'ClientId'=>'{google drive client id}',
-    'ClientSecret'=>'{google drive client secret}',
+	'ClientId'=>'{google drive client id}',
+	'ClientSecret'=>'{google drive client secret}',
 	'AccessType' => 'offline',
 	'RedirectUri' => '{Application redirected URL }'
 ));
@@ -77,7 +77,7 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 | Plugin | README |
 | ------ | ------ |
 | Facebook | [facebook/php-graph-sdk](https://github.com/facebook/php-graph-sdk/README.md) |
-| Google Drive | [google/google-api-php-client][(https://github.com/google/google-api-php-client.README.md) |
+| Google Drive | [google/google-api-php-client](https://github.com/tidyverse/googledrive/blob/master/README.md)
 | Bootstrap | [Bootstrap](https://getbootstrap.com/) |
 
 
