@@ -76,8 +76,8 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 
 | Plugin | README |
 | ------ | ------ |
-| Facebook | [facebook/php-graph-sdk](https://github.com/facebook/php-graph-sdk/README.md) |
-| Google Drive | [google/google-api-php-client](https://github.com/tidyverse/googledrive/blob/master/README.md)
+| Facebook | [facebook/php-graph-sdk](https://github.com/facebook/php-graph-sdk) |
+| Google Drive | [google/google-api-php-client](https://github.com/tidyverse/googledrive/blob/master/)
 | Bootstrap | [Bootstrap](https://getbootstrap.com/) |
 
 
